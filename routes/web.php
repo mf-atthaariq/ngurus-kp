@@ -18,8 +18,17 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('word', function(){
-    return view('word');
+Route::get('cetak-kp-1', function(){
+    return view('kp-1');
 });
+Route::post('kp-1', [Pencetak::class, 'kp1'])->name('kp-1.kp1');
 
-Route::post('word', [WordController::class, 'index'])->name('word.index');
+Route::get('cetak-kp-4', function(){
+    return view('kp-4');
+});
+Route::post('kp-4', [Pencetak::class, 'kp4'])->name('kp-4.kp4');
+
+Route::get('cetak-kp-5a', function(){
+    return view('kp-5a');
+});
+Route::post('kp-5a', [Pencetak::class, 'kp5a'])->name('kp-5a.kp5a');
