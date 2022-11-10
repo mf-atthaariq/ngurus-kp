@@ -48,37 +48,41 @@ class Pencetak extends Controller
     public function kp4(Request $request){
         $nama = $request->nama;
         $nim = $request->nim;
+        $judul = $request->judul;
 
-        $dosenpa = $request->dosenpa;
-        $nip = $request->nip;
+        $pemlap = $request->pemlap;
+        $nipPemlap = $request->nipPemlap;
+        $jabatan = $request->jabatan;
+        $alamat = $request->alamat;
+        $noHp = $request->noHp;
 
-        $sks = $request->sks;
-        $ipk = $request->ipk;
-
+        $lokasiKp = $request->lokasiKp;
         $tanggal = $request->tanggal;
 
         // Creating the new document...
-        $phpWord = new \PhpOffice\PhpWord\TemplateProcessor('KP-IF-01.docx');
+        $phpWord = new \PhpOffice\PhpWord\TemplateProcessor('KP-IF-04.docx');
 
         //edit string
         $phpWord->setValues([
             'nama' => $nama,
             'nim' => $nim,
+            'judul' => $judul,
 
-            'dosenpa' => $dosenpa,
-            'nip' => $nip,
+            'pemlap' => $pemlap,
+            'nipPemlap' => $nipPemlap,
+            'jabatan' => $jabatan,
+            'alamat' => $alamat,
+            'noHp' => $noHp,
 
-            'sks' => $sks,
-            'ipk' => $ipk,
-
+            'lokasiKp' => $lokasiKp,
             'tanggal' => $tanggal
         ]);
 
-        $pathToSave = 'KP-IF-01_edit.docx';
+        $pathToSave = 'KP-IF-04_edit.docx';
         $phpWord->saveAs($pathToSave);
 
         header('Content-Description: File Transfer');
-        header('Content-Disposition: attachment; filename=KP-IF-01_edit.docx');
+        header('Content-Disposition: attachment; filename=KP-IF-04_edit.docx');
         header('Content-Type: application/vnd.openxmlformats-officedocument.wordprocessingml.document');
 
         readfile($pathToSave);
