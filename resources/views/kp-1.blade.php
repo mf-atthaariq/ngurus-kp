@@ -51,10 +51,6 @@
                                     <input type="date" class="form-control" id="tanggal" name="tanggal" required>
                                 </div>
                             </div>
-                            <div class="row">
-                                <div class="col">
-                                </div>
-                            </div>
                         </div>
                         <br>
                         <button type="submit" class="btn btn-primary">Submit</button>

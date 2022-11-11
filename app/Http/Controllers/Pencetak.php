@@ -89,4 +89,37 @@ class Pencetak extends Controller
         
     }
     
+    public function kp5a(Request $request){
+        $nama = $request->nama;
+        $nim = $request->nim;
+        $dosenKp = $request->dosenKp;
+        $nipDosenKp = $request->nipDosenKp;
+        $tanggalMulai = $request->tanggalMulai;
+        $tanggalSelesai = $request->tanggalSelesai;
+        $judul = $request->judul;
+
+        // Creating the new document...
+        $phpWord = new \PhpOffice\PhpWord\TemplateProcessor('KP-IF-05A.docx');
+
+        //edit string
+        $phpWord->setValues([
+            'nama' => $nama,
+            'nim' => $nim,
+            'dosenKp' => $dosenKp,
+            'nipDosenKp' => $nipDosenKp,
+            'tanggalMulai' => $tanggalMulai,
+            'tanggalSelesai' => $tanggalSelesai,
+            'judul' => $judul,
+        ]);
+
+        $pathToSave = 'KP-IF-05A_edit.docx';
+        $phpWord->saveAs($pathToSave);
+
+        header('Content-Description: File Transfer');
+        header('Content-Disposition: attachment; filename=KP-IF-05A_edit.docx');
+        header('Content-Type: application/vnd.openxmlformats-officedocument.wordprocessingml.document');
+
+        readfile($pathToSave);
+        
+    }
 }
