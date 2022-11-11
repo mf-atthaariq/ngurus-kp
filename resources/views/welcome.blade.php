@@ -76,7 +76,7 @@
         <div class="row">
             <div class="col-md-4">
             <div class="card mb-4 box-shadow">
-                <img class="card-img-top" src="../assets/images/KP-IF-01.png" width=40 alt="Card image cap">
+                <img class="card-img-top" src="../assets/images/KP-IF-01.png" alt="Card image cap">
                 <div class="card-body">
                 <p class="card-text">KP-IF-01 : Permohonan Pengajuan KP</p>
                 <div class="d-flex justify-content-between align-items-center">
