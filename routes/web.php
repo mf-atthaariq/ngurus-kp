@@ -1,6 +1,6 @@
 <?php
 
-use App\Http\Controllers\WordController;
+use App\Http\Controllers\Pencetak;
 use Illuminate\Support\Facades\Route;
 
 /*
