@@ -9,17 +9,6 @@
         KP-IF-01
     </title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <style>
-        #footer {
-            position: fixed;
-            padding: 10px 10px 0px 10px;
-            bottom: 0;
-            width: 100%;
-            /* Height of the footer*/
-            height: 40px;
-            background: #d3d3d3;
-        }
-    </style>
 </head>
 <body>
     <main role="main">
@@ -75,9 +64,10 @@
             </div>
         </div>
     </main>
-    <footer class="text-muted" id="footer">
-        <p>&copy; M. F. Atthaariq - 2022</p>
-    </div>
+    <footer class="text-muted">
+        <div class="container">
+            <p>&copy; M. F. Atthaariq - 2022</p>
+        </div>
     </footer>
 </body>
 </html>
