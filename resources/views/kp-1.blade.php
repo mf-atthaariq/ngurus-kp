@@ -28,46 +28,52 @@
                 <p class="lead text"><h2>KP-IF-01</h2></p>
             </div>
         </div>
-        <form method="post" action="{{route('kp-1.kp1') }}">
-            @csrf
-            <div class="form-group">
-                <div class="row">
-                    <div class="col">
-                        <label for="nama">Nama</label>
-                        <input type="text" class="form-control" id="nama" name="nama" required>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <img class="center img-fluid" src="../assets/images/KP-IF-01.png" width="300" alt="Card image cap">
+                </div>
+                <div class="col">
+                    <form method="post" action="{{route('kp-1.kp1') }}">
+                        @csrf
 
-                        <label for="nim">NIM</label>
-                        <input type="text" class="form-control" id="nim" name="nim" required>
-                    </div>
-                    <div class="col">
-                        <label for="dosenpa">Dosen PA</label>
-                        <input type="text" class="form-control" id="dosenpa" name="dosenpa" required>
-                        
-                        <label for="nip">NIP Dosen PA</label>
-                        <input type="text" class="form-control" id="nip" name="nip" required>
-                    </div>
+                        <div class="form-group">
+                            <div class="row">
+                                <div class="col">
+                                    <label for="nama">Nama</label>
+                                    <input type="text" class="form-control" id="nama" name="nama" required>
+
+                                    <label for="nim">NIM</label>
+                                    <input type="text" class="form-control" id="nim" name="nim" required>
+
+                                    <label for="sks">Jumlah SKS yang telah ditempuh</label>
+                                    <input type="text" class="form-control" id="sks" name="sks" required>
+
+                                    <label for="ipk">IPK Sekarang</label>
+                                    <input type="text" class="form-control" id="ipk" name="ipk" required>
+
+                                    <label for="dosenpa">Dosen PA</label>
+                                    <input type="text" class="form-control" id="dosenpa" name="dosenpa" required>
+                                    
+                                    <label for="nip">NIP Dosen PA</label>
+                                    <input type="text" class="form-control" id="nip" name="nip" required>
+
+                                    <label for="tanggal">Tanggal</label>
+                                    <input type="date" class="form-control" id="tanggal" name="tanggal" required>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                        <a href="/" class="btn btn-secondary my-2">Kembali</a>
+                    </form>
                 </div>
             </div>
-            <br>
-            <div class="form-group">
-                <div class="row">
-                    <div class="col">
-                        <label for="sks">Jumlah SKS yang telah ditempuh</label>
-                        <input type="text" class="form-control" id="sks" name="sks" required>
-
-                        <label for="ipk">IPK Sekarang</label>
-                        <input type="text" class="form-control" id="ipk" name="ipk" required>
-                    </div>
-                    <div class="col">
-                        <label for="tanggal">Tanggal</label>
-                        <input type="date" class="form-control" id="tanggal" name="tanggal" required>
-                    </div>
-                </div>
-            </div>
-            <br>
-            <button type="submit" class="btn btn-primary">Submit</button>
-            <a href="/" class="btn btn-secondary my-2">Kembali</a>
-        </form>
+        </div>
     </main>
     <footer class="text-muted" id="footer">
         <p>&copy; M. F. Atthaariq - 2022</p>
