@@ -61,7 +61,7 @@
                             </div>
                         </div>
                         <br>
-                        <button type="submit" class="btn btn-primary">Submit</button>
+                        <button type="submit" class="btn btn-primary">Download</button>
                         <a href="/" class="btn btn-secondary my-2">Kembali</a>
                     </form>
                 </div>
