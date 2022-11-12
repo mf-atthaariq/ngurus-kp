@@ -25,7 +25,6 @@
                 <div class="col">
                     <form method="post" action="{{route('kp-5a.kp5a') }}">
                         @csrf
-
                         <div class="form-group">
                             <div class="row">
                                 <div class="col">
