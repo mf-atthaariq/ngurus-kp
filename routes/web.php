@@ -47,3 +47,8 @@ Route::get('cetak-kp-7', function(){
     return view('kp-7');
 });
 Route::post('kp-7', [Pencetak::class, 'kp7'])->name('kp-7.kp7');
+
+Route::get('cetak-kp-8', function(){
+    return view('kp-8');
+});
+Route::post('kp-8', [Pencetak::class, 'kp8'])->name('kp-8.kp8');

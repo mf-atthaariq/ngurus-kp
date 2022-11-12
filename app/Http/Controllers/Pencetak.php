@@ -239,4 +239,48 @@ class Pencetak extends Controller
         readfile($pathToSave);
         
     }
+
+    public function kp8(Request $request){
+        $nama = $request->nama;
+        $nim = $request->nim;
+        $tempatKp = $request->tempatKp;
+        $dosenKp = $request->dosenKp;
+        $nipDosenKp = $request->nipDosenKp;
+        $tanggalMulai = $request->tanggalMulai;
+        $tanggalSelesai = $request->tanggalSelesai;
+        $judul = $request->judul;
+        $sks = $request->sks;
+        $ipk = $request->ipk;
+        $bulan = $request->bulan;
+        $tahun = $request->tahun;
+
+        // Creating the new document...
+        $phpWord = new \PhpOffice\PhpWord\TemplateProcessor('KP-IF-08.docx');
+
+        //edit string
+        $phpWord->setValues([
+            'nama' => $nama,
+            'nim' => $nim,
+            'tempatKp' => $tempatKp,
+            'dosenKp' => $dosenKp,
+            'nipDosenKp' => $nipDosenKp,
+            'tanggalMulai' => $tanggalMulai,
+            'tanggalSelesai' => $tanggalSelesai,
+            'judul' => $judul,
+            'sks' => $sks,
+            'ipk' => $ipk,
+            'bulan' => $bulan,
+            'tahun' => $tahun,
+        ]);
+
+        $pathToSave = 'KP-IF-08_edit.docx';
+        $phpWord->saveAs($pathToSave);
+
+        header('Content-Description: File Transfer');
+        header('Content-Disposition: attachment; filename=KP-IF-08_edit.docx');
+        header('Content-Type: application/vnd.openxmlformats-officedocument.wordprocessingml.document');
+
+        readfile($pathToSave);
+        
+    }
 }
