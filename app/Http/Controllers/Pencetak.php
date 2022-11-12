@@ -160,4 +160,47 @@ class Pencetak extends Controller
         readfile($pathToSave);
         
     }
+
+    public function kp6(Request $request){
+        $nama = $request->nama;
+        $nim = $request->nim;
+        $tempatKp = $request->tempatKp;
+        $pemlap = $request->pemlap;
+        $nipPemlap = $request->nipPemlap;
+        $tanggalMulai = $request->tanggalMulai;
+        $tanggalSelesai = $request->tanggalSelesai;
+        $judul = $request->judul;
+        $lokasiKp = $request->lokasiKp;
+        $bulan = $request->bulan;
+        $tahun = $request->tahun;
+
+
+        // Creating the new document...
+        $phpWord = new \PhpOffice\PhpWord\TemplateProcessor('KP-IF-06.docx');
+
+        //edit string
+        $phpWord->setValues([
+            'nama' => $nama,
+            'nim' => $nim,
+            'tempatKp' => $tempatKp,
+            'pemlap' => $pemlap,
+            'nipPemlap' => $nipPemlap,
+            'tanggalMulai' => $tanggalMulai,
+            'tanggalSelesai' => $tanggalSelesai,
+            'judul' => $judul,
+            'lokasiKp' => $lokasiKp,
+            'bulan' => $bulan,
+            'tahun' => $tahun,
+        ]);
+
+        $pathToSave = 'KP-IF-06_edit.docx';
+        $phpWord->saveAs($pathToSave);
+
+        header('Content-Description: File Transfer');
+        header('Content-Disposition: attachment; filename=KP-IF-06_edit.docx');
+        header('Content-Type: application/vnd.openxmlformats-officedocument.wordprocessingml.document');
+
+        readfile($pathToSave);
+        
+    }
 }

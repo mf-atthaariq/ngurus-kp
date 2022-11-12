@@ -132,30 +132,28 @@
             </div>
             <div class="col-md-4">
             <div class="card mb-4 box-shadow">
-                <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&bg=55595c&fg=eceeef&text=Thumbnail" alt="Card image cap">
+                <img class="card-img-top" src="../assets/images/KP-IF-06.png" width=40 alt="Card image cap">
                 <div class="card-body">
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <p class="card-text">KP-IF-06 : Penilaian Lapangan KP</p>
                 <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                    <a href="/cetak-kp-6" class="btn btn-sm btn-outline-primary">ISI</a>
                     </div>
-                    <small class="text-muted">9 mins</small>
+                    <small class="text-muted">7 item</small>
                 </div>
                 </div>
             </div>
             </div>
             <div class="col-md-4">
             <div class="card mb-4 box-shadow">
-                <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&bg=55595c&fg=eceeef&text=Thumbnail" alt="Card image cap">
+                <img class="card-img-top" src="../assets/images/KP-IF-07.png" width=40 alt="Card image cap">
                 <div class="card-body">
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <p class="card-text">KP-IF-07 : Surat Keterangan Siap Seminar KP</p>
                 <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                    <a href="/cetak-kp-7" class="btn btn-sm btn-outline-primary">ISI</a>
                     </div>
-                    <small class="text-muted">9 mins</small>
+                    <small class="text-muted">7 item</small>
                 </div>
                 </div>
             </div>
