@@ -35,20 +35,23 @@
                                     <label for="nim">NIM</label>
                                     <input type="text" class="form-control" id="nim" name="nim" required>
 
-                                    <label for="sks">Jumlah SKS yang telah ditempuh</label>
-                                    <input type="text" class="form-control" id="sks" name="sks" required>
+                                    <label for="tempatKp">Nama Tempat KP</label>
+                                    <input type="text" class="form-control" id="tempatKp" name="tempatKp" required>
 
-                                    <label for="ipk">IPK Sekarang</label>
-                                    <input type="text" class="form-control" id="ipk" name="ipk" required>
+                                    <label for="dosenKp">Dosen KP</label>
+                                    <input type="text" class="form-control" id="dosenKp" name="dosenKp" required>
 
-                                    <label for="dosenpa">Dosen PA</label>
-                                    <input type="text" class="form-control" id="dosenpa" name="dosenpa" required>
+                                    <label for="nipDosenKp">NIP Dosen KP</label>
+                                    <input type="text" class="form-control" id="nipDosenKp" name="nipDosenKp" required>
+
+                                    <label for="tanggalMulai">Tanggal Mulai</label>
+                                    <input type="text" class="form-control" id="tanggalMulai" name="tanggalMulai" required>
                                     
-                                    <label for="nip">NIP Dosen PA</label>
-                                    <input type="text" class="form-control" id="nip" name="nip" required>
+                                    <label for="tanggalSelesai">Tanggal Selesai</label>
+                                    <input type="text" class="form-control" id="tanggalSelesai" name="tanggalSelesai" required>
 
-                                    <label for="tanggal">Tanggal</label>
-                                    <input type="date" class="form-control" id="tanggal" name="tanggal" required>
+                                    <label for="judul">Judul</label>
+                                    <input type="text" class="form-control" id="judul" name="judul" required>
                                 </div>
                             </div>
                         </div>

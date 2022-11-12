@@ -92,6 +92,7 @@ class Pencetak extends Controller
     public function kp5a(Request $request){
         $nama = $request->nama;
         $nim = $request->nim;
+        $tempatKp = $request->tempatKp;
         $dosenKp = $request->dosenKp;
         $nipDosenKp = $request->nipDosenKp;
         $tanggalMulai = $request->tanggalMulai;
@@ -105,6 +106,7 @@ class Pencetak extends Controller
         $phpWord->setValues([
             'nama' => $nama,
             'nim' => $nim,
+            'tempatKp' => $tempatKp,
             'dosenKp' => $dosenKp,
             'nipDosenKp' => $nipDosenKp,
             'tanggalMulai' => $tanggalMulai,
