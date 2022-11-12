@@ -59,7 +59,7 @@
             <img src="../assets/logo/infor.png">
             <h1 class="jumbotron-heading">NgurusKP</h1>
             <p class="lead text-muted">NgurusKP (mengurus KP) adalah website untuk mencetak formulir Kerja Praktik mahasiswa Informatika UNTAN.
-                <br>Dengan NgurusKP, mahasiswa dapat mengisi formulir KP tanpa harus membuka <i>word processor</i> (MS Word, Google Docs).
+                <br>Dengan NgurusKP, mahasiswa dapat mengurus (mengisi formulir) KP tanpa harus membuka <i>word processor</i> (MS Word, Google Docs).
                 <br>Tinggal Pilih --> Isi --> Download.
             </p>
             <p>
